@@ -12,9 +12,10 @@ function App() {
     <BrowserRouter>
       <div style={{ padding: 30 }}>
         <Routes>
-          {/* 404 rounte */}
-          <Route path="*" element={<PageNotFound />} />
+          {/* Main routes*/}
           <Route path="/" element={<HomePage />} />
+          {/* 404 route */}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
